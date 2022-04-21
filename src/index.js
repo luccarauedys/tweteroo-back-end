@@ -18,4 +18,9 @@ app.post("/tweets", (req, res) => {
   res.send("OK");
 });
 
+app.get("/tweets", (req, res) => {
+  const tweetsList = tweets.slice(-10);
+  res.json(tweetsList);
+});
+
 app.listen(5000);
