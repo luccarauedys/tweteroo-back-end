@@ -1,3 +1,2 @@
-export const users = [];
-export let avatar = null;
-export const tweets = [];
+export const users = []
+export const tweets = []
